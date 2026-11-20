@@ -111,7 +111,7 @@ flowchart TD
 <summary><b>omp</b></summary>
 
 ```bash
-git clone https://github.com/<your-org>/chaoxing-course.git ~/.omp/agent/skills/chaoxing-course
+git clone https://github.com/Gerchart-GXT/chaoxing-study-skill.git ~/.omp/agent/skills/chaoxing-course
 ```
 </details>
 
@@ -119,7 +119,7 @@ git clone https://github.com/<your-org>/chaoxing-course.git ~/.omp/agent/skills/
 <summary><b>Claude Code</b></summary>
 
 ```bash
-git clone https://github.com/<your-org>/chaoxing-course.git ~/.claude/skills/chaoxing-course
+git clone https://github.com/Gerchart-GXT/chaoxing-study-skill.git ~/.claude/skills/chaoxing-course
 ```
 </details>
 
@@ -129,7 +129,7 @@ git clone https://github.com/<your-org>/chaoxing-course.git ~/.claude/skills/cha
 Codex 没有 skills 目录，把它放在任意位置，再在该项目里加一个 `AGENTS.md` 指向 `SKILL.md`：
 
 ```bash
-git clone https://github.com/<your-org>/chaoxing-course.git ~/chaoxing-course
+git clone https://github.com/Gerchart-GXT/chaoxing-study-skill.git ~/chaoxing-course
 printf 'When the task is about Chaoxing (超星学习通) video courses, read and follow:\n~/chaoxing-course/SKILL.md and its references/.\n' >> AGENTS.md
 ```
 </details>
@@ -169,7 +169,7 @@ node <skill-dir>/scripts/preflight.mjs --endpoint http://127.0.0.1:9222
 ```text
 请在这台机器上安装并验证 chaoxing-course Skill。
 
-仓库：https://github.com/<your-org>/chaoxing-course
+仓库：https://github.com/Gerchart-GXT/chaoxing-study-skill
 目标目录：按宿主 agent 的 skills 约定放置（omp: ~/.omp/agent/skills/，Claude Code: ~/.claude/skills/）；
           无 skills 目录的 agent，放到 ~/chaoxing-course 并在项目 AGENTS.md 里加一行指向 SKILL.md。
 
